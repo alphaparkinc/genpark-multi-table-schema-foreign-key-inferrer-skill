@@ -1,0 +1,36 @@
+{
+  "name": "genpark-multi-table-schema-foreign-key-inferrer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Relational database schema foreign key inferrer reconstructing ER diagrams and automated JOIN graph traversal paths.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "data-analytics",
+  "tags": [
+    "foreign-key-inferrer",
+    "erd",
+    "schema-discovery",
+    "relational-database",
+    "sql-joins"
+  ],
+  "inputs": {
+    "table_schemas": {
+      "type": "object"
+    }
+  },
+  "outputs": {
+    "inference_job_id": {
+      "type": "string"
+    },
+    "tables_analyzed": {
+      "type": "integer"
+    },
+    "schema_erd_connected": {
+      "type": "boolean"
+    },
+    "erd_diagram_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
